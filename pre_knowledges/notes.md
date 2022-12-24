@@ -17,20 +17,20 @@
 
 ## Software Design Principles
 
-Features of Good Design
+**Features of Good Design**
 1. Code reuse
     3 levels of reuse
 2. Extensibility
     Change is the only constant thing in a programmer's life.
 
-Design Principles
+**Design Principles**
 1. Encapsulate the varies
     encapsulation on a method level
     encapsulation on a class level
 2. Program to an Interface, not an Implementation
 3. Favor Composition Over Inheritance
     
-Solid Principles
+**Solid Principles**
 1. Single Responsibility Principle
     a class should have just one reason to change.
 2. Open / Closed Principle
