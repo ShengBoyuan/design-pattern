@@ -7,4 +7,5 @@ import (
 
 func TestGetSomeData(t *testing.T) {
 	singleton.GetSomeData()
+	singleton.GetSomeData2()
 }
