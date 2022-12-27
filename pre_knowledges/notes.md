@@ -9,11 +9,13 @@
 4. Inheritance
 
 ## Introduction to Patterns
-
 3 Main Groups of Patterns
 1. Creational Patterns
+  Creational Patterns provide various object creation mechanisms, which increase flexibility and reuse of exsiting code.
 2. Structural Patterns
+  Structural Patterns explain how to assemble objects and classes into large structure, while keeping this structure flexible and efficient.
 3. Behavioral Patterns
+  Behavioral Patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
 ## Software Design Principles
 
