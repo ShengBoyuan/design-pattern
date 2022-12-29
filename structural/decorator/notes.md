@@ -1,4 +1,4 @@
-# No.8 Decorator (Wrapper)
+# No.9 Decorator (Wrapper)
 Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
 ## Structure
@@ -39,3 +39,6 @@ Cons
 - The initial configuration code of layers might look pretty ugly.
 
 ## Relations with Other Patterns
+- Adapter changes the interface of an existing object, while Decorator enhances an object without changing its interface. Also, Decorator supports recursive composition.
+- CoR and Decorator are very similar. But CoR can execute arbitrary operations independently of each other and stop passing the request further at any point. Decorators aren't allowed to break the flow of the request.
+- Decorator lets you change the skin of an object, while Strategy lets you change the guts.
