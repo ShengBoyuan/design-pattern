@@ -18,7 +18,21 @@ The structure of CoR consists of 4 parts:
 - Execute several handlers in a particular order.
 - When the set of handlers and their order are supposed to change at runtime.
 
+## How to Implement
+1. Declare the handler interface and describe the signature of a method of handling requests.
+2. Eliminate duplicate boilerplate code in concrete handlers, it might be worthing creating an abstract base handler class, derived from the handler interface.
+3. Create concrete handler subclasses and implement their handling methods.
+4. Client may either assemble chains on its own or receive pre-built chains from other objects. (Use some factory classes to build chains)
 
+## Pros and Cons
+Pros
+- Control the order of request handling.
+- Single Responsibility Principle.
+- Open /Closed Principle.
+Cons
+- Some requests may end up unhandled.
 
-
-
+## Relations with Other Patterns
+- CoR is often used in conjunction with Composite.
+- Handlers in CoR can be implemented as Commands.
+- CoR and Decorator have very similar class structures. CoR can stop passing the request, and execute arbitrary operations independently. Decorators extend object's behavior while keeping it consistent with the base interface, and it isn't allowed to break the flow of the request.
