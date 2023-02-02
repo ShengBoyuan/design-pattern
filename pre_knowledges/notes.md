@@ -46,6 +46,6 @@
     6. Invariants of a superclass must be preserved
     7. A subclass shouldn't change values of private fields of the superclass
 4. Interface Segregation Principle
-    Clients shouldn't be forced to depend on methods they do not use.
+    Clients shouldn't be forced to depend on methods they do not use. Interfaces should be narrow enough.
 5. Dependency Inversion Principle
-    Low-level classes depend on high-level ones, details depend on abstractions.
+    Details depend on abstractions. High-level classes shouldn't depend on low-level classes, both should depend on abstractions.
